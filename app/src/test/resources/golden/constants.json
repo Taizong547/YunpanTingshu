@@ -1,0 +1,45 @@
+{
+  "CLOUD139_USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  "CLOUD139_ROUTE_POLICY_URL": "https://user-njs.yun.139.com/user/route/qryRoutePolicy",
+  "DEVICE_INFO": "||9|7.14.0|chrome|120.0.0.0|||windows 10||zh-CN|||",
+  "CLIENT_INFO": "||9|7.14.0|chrome|120.0.0.0|||windows 10||zh-CN|||dW5kZWZpbmVk||",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "CMS-DEVICE": "default",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Origin": "https://yun.139.com",
+    "Referer": "https://yun.139.com/w/",
+    "x-DeviceInfo": "||9|7.14.0|chrome|120.0.0.0|||windows 10||zh-CN|||",
+    "x-huawei-channelSrc": "10000034",
+    "x-inner-ntwk": "2",
+    "x-m4c-caller": "PC",
+    "x-m4c-src": "10002",
+    "Inner-Hcy-Router-Https": "1",
+    "x-SvcType": "1",
+    "mcloud-channel": "1000101",
+    "mcloud-client": "10701",
+    "mcloud-version": "7.14.0"
+  },
+  "headersNonRouteExtra": {
+    "Caller": "web",
+    "mcloud-route": "001",
+    "x-yun-api-version": "v1",
+    "x-yun-app-channel": "10000034",
+    "x-yun-channel-source": "10000034",
+    "x-yun-client-info": "||9|7.14.0|chrome|120.0.0.0|||windows 10||zh-CN|||dW5kZWZpbmVk||",
+    "x-yun-module-type": "100",
+    "x-yun-svc-type": "1"
+  },
+  "downloadHeaders": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Referer": "https://yun.139.com/",
+    "Origin": "https://yun.139.com"
+  },
+  "errorCodes": [
+    "9000",
+    "9008",
+    "9100"
+  ]
+}

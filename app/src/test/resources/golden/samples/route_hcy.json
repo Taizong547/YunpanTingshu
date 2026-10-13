@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "data": {
+    "routePolicyList": [
+      {
+        "modName": "personal",
+        "httpsUrl": "https://personal-kd-njs.yun.139.com/hcy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "data": {
+    "getDiskResult": {
+      "catalogList": [],
+      "contentList": [
+        {
+          "contentID": "old-audio-001",
+          "contentName": "射雕英雄传 第01回.m4b",
+          "contentSize": 20971520,
+          "updateTime": "20260713225311",
+          "createTime": "20260713225311"
+        },
+        {
+          "contentID": "old-audio-002",
+          "contentName": "射雕英雄传 第02回.flac",
+          "contentSize": 52428800,
+          "updateTime": "20260713225401",
+          "createTime": "20260713225401"
+        }
+      ]
+    }
+  }
+}

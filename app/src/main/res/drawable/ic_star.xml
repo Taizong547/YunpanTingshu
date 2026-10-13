@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 五角星收藏矢量图标（Material star） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,17.27L18.18,21L16.54,13.97L22,9.24l-2.91,-0.25L12,5L4.91,8.75L2,9.24l5.46,4.73L5.82,21z" />
+</vector>

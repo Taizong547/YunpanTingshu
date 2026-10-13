@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 播放页 SeekBar 轨道（已播 accent / 未播 半透白） -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="line">
+            <stroke android:width="4dp" android:color="#3A3D46" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke android:width="4dp" android:color="@color/playerAccent" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

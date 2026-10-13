@@ -1,0 +1,79 @@
+{
+  "resultCode": "0",
+  "desc": "",
+  "data": {
+    "getOutLinkGeneralResp": {
+      "outLinkGeneral": [
+        {
+          "linkID": "2xTrMfreXj5lq",
+          "encrypt": 1,
+          "passwd": "ghh8",
+          "url": "https://yun.139.com/shareweb/#/w/i/2xTrMfreXj5lq",
+          "linkUrlMin": null,
+          "lkName": "2026老梁精选",
+          "ctTime": "20261004092051",
+          "lastUdTime": "20261004093535",
+          "lastAudTime": null,
+          "tolSize": null,
+          "audRes": null,
+          "audDesc": null,
+          "linkType": 0,
+          "objType": null,
+          "coType": null,
+          "coSuffix": null,
+          "desc": null,
+          "pubType": 1,
+          "dlTimes": 0,
+          "smallThumbnail": null,
+          "bigThumbnail": null,
+          "width": null,
+          "height": null,
+          "creator": "",
+          "owner": "",
+          "ownerUserId": "1297686247153959095",
+          "brwTimes": 1,
+          "svTimes": 0,
+          "isOutLinkInvalid": null,
+          "expireTime": "",
+          "auditResult": null,
+          "isUnlimitedTimes": 1,
+          "unLimitBrowseTimes": null,
+          "objectID": "53b65ff48eec4356a94a35082d69bafc",
+          "linkCode": null,
+          "openLinkTransStatus": null,
+          "thumbnailStatus": null,
+          "offStatus": null,
+          "firstFileName": "2026老梁精选",
+          "fileCount": 1,
+          "autoFillPasswdLink": 1,
+          "viewerCount": null,
+          "firstViewer": null,
+          "subStatus": null,
+          "subTimes": null,
+          "fnum": null
+        }
+      ],
+      "length": null
+    },
+    "creatorInfo": {
+      "creatorPortraitId": "1000000000000000001",
+      "creatorPortraitUrl": "https://obs-gz4-ypcg-avatar.obs.dualstack.cidc-rp-2006.joint.cmecloud.cn:443/20231205/1000000000000000001.png?AccessKeyId=YJFNJLEFBUWUZJ22OZ3D&Expires=1791942588&Signature=ewV6FO9HEQw9XGrw3gDG2zt48TI%3D",
+      "creatorBigPortraitUrl": "https://obs-gz4-ypcg-avatar.obs.dualstack.cidc-rp-2006.joint.cmecloud.cn:443/20231205/1000000000000000001.png?AccessKeyId=YJFNJLEFBUWUZJ22OZ3D&Expires=1791942588&Signature=ewV6FO9HEQw9XGrw3gDG2zt48TI%3D",
+      "creatorDefaultPortraitUrl": "https://obs-gz4-ypcg-avatar.obs.dualstack.cidc-rp-2006.joint.cmecloud.cn:443/20231205/1000000000000000001.png?AccessKeyId=YJFNJLEFBUWUZJ22OZ3D&Expires=1791942588&Signature=ewV6FO9HEQw9XGrw3gDG2zt48TI%3D",
+      "creatorIsDefault": "1",
+      "creatorNickname": "136****6780",
+      "vipLevelVOS": [
+        {
+          "level": "1002",
+          "levelName": "黄金会员",
+          "levelUrl": "https://eos.guangzhou-2.cmecloud.cn/gz1-ypcg-eos-mcdmc-manage-001/yun-member/vip_benefit/identity/icon_normal_vip_gold.png"
+        }
+      ]
+    },
+    "isPasswd": 1,
+    "outLinkGeneral": null,
+    "length": null
+  },
+  "success": true,
+  "code": "0"
+}

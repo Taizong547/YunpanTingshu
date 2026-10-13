@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "data": {
+    "cdnUrl": "https://cdn.example.com/dl/audio-001.mp3?auth=abc",
+    "size": 15728640,
+    "fileName": "第一章 红岸往事.mp3"
+  }
+}

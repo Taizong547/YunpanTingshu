@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "data": {
+    "fileList": [
+      {
+        "fileId": "fb-mp3",
+        "name": "多兜底音频.mp3",
+        "size": 1024000,
+        "updatedAt": "2026-07-13T10:00:00.000+08:00"
+      },
+      {
+        "fileId": "fb-m4b",
+        "name": "多兜底有声书.m4b",
+        "size": 2048000,
+        "updatedAt": "2026-07-13T10:05:00.000+08:00"
+      },
+      {
+        "fileId": "fb-flac",
+        "name": "多兜底无损.flac",
+        "size": 4096000,
+        "updatedAt": "2026-07-13T10:10:00.000+08:00"
+      }
+    ]
+  }
+}

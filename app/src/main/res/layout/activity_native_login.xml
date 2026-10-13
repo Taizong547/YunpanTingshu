@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 原生登录页：手机号 + 验证码，暖橙主题，底部隐藏 WebView 负责真实抓 token -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_player_background"
+    android:padding="24dp">
+
+    <!-- 顶栏：标题 + 关闭 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登录移动云盘"
+            android:textColor="@color/playerTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/playerTextSecondary"
+            android:contentDescription="关闭" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="手机号登录"
+        android:textColor="@color/playerTextPrimary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="未注册手机号验证后将自动注册"
+        android:textColor="@color/playerTextSecondary"
+        android:textSize="13sp" />
+
+    <!-- 手机号 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPhone"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="请输入11位手机号"
+        app:boxStrokeColor="@color/playerAccent"
+        app:hintTextColor="@color/playerAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/playerTextPrimary"
+            android:textColorHint="@color/playerTextSecondary"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 验证码 + 获取按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutCode"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入6位验证码"
+            app:boxStrokeColor="@color/playerAccent"
+            app:hintTextColor="@color/playerAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/playerTextPrimary"
+                android:textColorHint="@color/playerTextSecondary"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendCode"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:minWidth="108dp"
+            android:text="获取验证码"
+            android:textColor="@color/playerAccent"
+            app:strokeColor="@color/playerAccent" />
+    </LinearLayout>
+
+    <!-- 登录按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:enabled="false"
+        android:text="登 录"
+        android:textSize="17sp"
+        app:backgroundTint="@color/playerAccent"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tipText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/playerAccent"
+        android:textSize="13sp" />
+
+    <!-- 降级：自动填表单失败时，打开隐藏 WebView 手动登录 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnManualLogin"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="自动登录失败？点此打开网页手动登录"
+        android:textColor="@color/playerTextSecondary"
+        android:visibility="gone" />
+
+    <!-- 隐藏的 WebView：加载 139 登录页，用 JS 自动填表单、抓 Authorization -->
+    <WebView
+        android:id="@+id/hiddenWeb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+</LinearLayout>

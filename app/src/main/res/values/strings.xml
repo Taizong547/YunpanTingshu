@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">云盘听书</string>
+
+    <!-- 底部 Tab -->
+    <string name="title_history">历史</string>
+    <string name="title_browse">云盘</string>
+    <string name="title_me">我的</string>
+    <string name="title_player">播放</string>
+    <string name="title_bookshelf">书架</string>
+
+    <!-- 书架 -->
+    <string name="bookshelf_empty">书架还空着，去云盘或分享里把喜欢的书收藏进来吧</string>
+    <string name="bookshelf_play">播放</string>
+    <string name="bookshelf_rename">重命名</string>
+    <string name="bookshelf_delete">移出书架</string>
+    <string name="bookshelf_delete_confirm">确定把「%1$s」移出书架吗？</string>
+    <string name="bookshelf_collect">加入书架</string>
+    <string name="bookshelf_collected">已加入书架：%1$s</string>
+    <string name="bookshelf_already">已在书架中：%1$s</string>
+
+    <!-- 导入源 -->
+    <string name="source_hint_authorization">粘贴移动云盘 Authorization（可含 Basic 前缀）</string>
+    <string name="source_save_validate">保存并校验</string>
+    <string name="source_howto_title">如何获取 Authorization</string>
+    <string name="source_howto_body">在浏览器打开 https://yun.139.com/w/ 并登录，按 F12 打开开发者工具，切到 Network（网络）面板，任选一个请求，在 Request Headers（请求头）中找到 Authorization 整行并复制（可含 Basic 前缀），粘贴到上方输入框即可。</string>
+    <string name="source_expired">已过期，请重新粘贴</string>
+    <string name="source_active">当前账号</string>
+    <string name="source_set_active">切换到此账号</string>
+    <string name="source_remove">删除</string>
+    <string name="source_remove_confirm">确定删除这个账号吗？删除后需重新粘贴 Authorization。</string>
+    <string name="source_no_account">还没有账号</string>
+
+    <!-- 我的页 -->
+    <string name="me_section_account">账号管理</string>
+    <string name="me_share_hint">粘贴移动云盘分享链接</string>
+    <string name="me_share_passwd">提取码（没有可留空）</string>
+    <string name="me_share_import">打开分享</string>
+    <string name="me_scan_depth_title">默认递归扫描深度</string>
+    <string name="me_stat_today">今日 0 分钟</string>
+    <string name="me_stat_total">累计 0 小时 0 分</string>
+    <string name="me_title">我的</string>
+
+    <!-- 浏览页 -->
+    <string name="browse_play_all">播放整个文件夹</string>
+    <string name="browse_empty">暂无内容</string>
+    <string name="browse_no_account">还没有登录云盘账号</string>
+    <string name="browse_go_import">去导入账号</string>
+    <string name="browse_loading">加载中…</string>
+    <string name="browse_load_more">加载更多…</string>
+    <string name="browse_end">没有更多了</string>
+    <string name="browse_retry">重试</string>
+    <string name="browse_root">根目录</string>
+
+    <!-- 递归深度 BottomSheet -->
+    <string name="depth_current">仅当前层</string>
+    <string name="depth_level1">向下 1 级</string>
+    <string name="depth_level2">向下 2 级</string>
+    <string name="depth_level3">向下 3 级</string>
+    <string name="depth_level5">向下 5 级</string>
+    <string name="depth_all">全部子级</string>
+    <string name="depth_title">选择扫描深度</string>
+    <string name="depth_set_default">记住为默认</string>
+    <string name="depth_confirm">开始扫描并播放</string>
+    <string name="depth_cancel">取消</string>
+
+    <!-- 扫描进度对话框 -->
+    <string name="scan_title">正在扫描音频…</string>
+    <string name="scan_visited">已扫描文件夹</string>
+    <string name="scan_found">已发现音频</string>
+
+    <!-- 播放页 -->
+    <string name="player_play">播放</string>
+    <string name="player_pause">暂停</string>
+    <string name="player_prev">上一首</string>
+    <string name="player_next">下一首</string>
+    <string name="player_speed">倍速</string>
+    <string name="player_repeat">循环</string>
+    <string name="player_timer">定时</string>
+    <string name="player_no_track">未在播放</string>
+    <string name="player_album">专辑</string>
+    <string name="player_extend">续期</string>
+    <string name="player_cancel_timer">取消定时</string>
+
+    <!-- 睡眠定时 BottomSheet -->
+    <string name="timer_minutes_title">定时停止</string>
+    <string name="timer_end_episode">本集结束后停止</string>
+    <string name="timer_episodes_title">再播完 N 集停止</string>
+    <string name="timer_episodes_custom">自定义集数</string>
+    <string name="timer_chip_idle">定时未开启</string>
+    <string name="timer_chip_end_episode">本集结束后停</string>
+
+    <!-- 迷你播放条 -->
+    <string name="mini_now_playing">未在播放</string>
+
+    <!-- 历史项 -->
+    <string name="history_finished">已听完</string>
+    <string name="history_clear">清空</string>
+    <string name="history_clear_confirm">确定清空全部播放历史吗？此操作不可恢复。</string>
+    <string name="history_empty">还没有播放记录</string>
+    <string name="history_delete">删除此条</string>
+
+    <!-- 通用 -->
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_ok">知道了</string>
+    <string name="notif_permission_title">需要通知权限</string>
+    <string name="notif_permission_body">播放时需要通知权限，以便在通知栏与锁屏显示播放控制。</string>
+</resources>

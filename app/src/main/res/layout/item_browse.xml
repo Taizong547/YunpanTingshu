@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 浏览列表项：图标、文件名、副信息（时长/大小）、文件夹行尾「播放整个文件夹」 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_card_16"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="4dp"
+    android:padding="12dp"
+    android:minHeight="56dp">
+
+    <!-- 文件夹/音频图标 -->
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_folder"
+        android:contentDescription="@string/title_browse" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="示例"
+            android:textColor="@color/onSurface"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/itemSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/onSurfaceVariant"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- 当前正在播放的音频标记 -->
+    <TextView
+        android:id="@+id/itemPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放中"
+        android:textColor="@color/primary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginEnd="8dp" />
+
+    <!-- 文件夹行：加入书架（音频行隐藏） -->
+    <ImageButton
+        android:id="@+id/btnCollect"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_star"
+        android:contentDescription="@string/bookshelf_collect"
+        android:visibility="gone" />
+
+    <!-- 文件夹行：播放整个文件夹按钮（音频行隐藏） -->
+    <ImageButton
+        android:id="@+id/btnPlayAll"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_music_note"
+        android:contentDescription="@string/browse_play_all"
+        android:visibility="gone" />
+
+</LinearLayout>

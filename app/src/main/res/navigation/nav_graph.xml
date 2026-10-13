@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/historyFragment">
+
+    <!-- 底部 Tab：历史 -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.yunpan.tingshu.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_history_to_player"
+            app:destination="@id/playerFragment" />
+    </fragment>
+
+    <!-- 底部 Tab：云盘浏览 -->
+    <fragment
+        android:id="@+id/browseFragment"
+        android:name="com.yunpan.tingshu.ui.browse.BrowseFragment"
+        android:label="@string/title_browse"
+        tools:layout="@layout/fragment_browse">
+        <action
+            android:id="@+id/action_browse_to_player"
+            app:destination="@id/playerFragment" />
+    </fragment>
+
+    <!-- 底部 Tab：书架（本地书单） -->
+    <fragment
+        android:id="@+id/bookshelfFragment"
+        android:name="com.yunpan.tingshu.ui.bookshelf.BookshelfFragment"
+        android:label="@string/title_bookshelf"
+        tools:layout="@layout/fragment_bookshelf">
+        <action
+            android:id="@+id/action_bookshelf_to_player"
+            app:destination="@id/playerFragment" />
+    </fragment>
+
+    <!-- 底部 Tab：我的（含账号导入/分享链接/递归深度设置） -->
+    <fragment
+        android:id="@+id/meFragment"
+        android:name="com.yunpan.tingshu.ui.me.MeFragment"
+        android:label="@string/title_me"
+        tools:layout="@layout/fragment_me" />
+
+    <!-- 全屏播放页（非 Tab） -->
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.yunpan.tingshu.ui.player.PlayerFragment"
+        android:label="@string/title_player"
+        tools:layout="@layout/fragment_player" />
+
+    <!-- 听书分析页（非 Tab） -->
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.yunpan.tingshu.ui.analytics.AnalyticsFragment"
+        android:label="听书分析"
+        tools:layout="@layout/fragment_analytics" />
+
+</navigation>

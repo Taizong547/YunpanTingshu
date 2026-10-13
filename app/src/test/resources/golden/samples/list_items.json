@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      {
+        "fileId": "folder-001",
+        "name": "三体全集",
+        "type": "folder",
+        "updatedAt": "2026-07-13T10:00:00.000+08:00",
+        "createdAt": "2026-07-13T10:00:00.000+08:00"
+      },
+      {
+        "fileId": "audio-001",
+        "contentID": "audio-001",
+        "contentName": "第一章 红岸往事.mp3",
+        "contentSize": 15728640,
+        "size": 15728640,
+        "type": "file",
+        "updatedAt": "2026-07-13T10:01:00.000+08:00",
+        "createdAt": "2026-07-13T10:01:00.000+08:00",
+        "thumbnailUrls": [
+          { "url": "https://example.com/thumb/small/audio-001.jpg" },
+          { "url": "https://example.com/thumb/large/audio-001.jpg" }
+        ]
+      },
+      {
+        "catalogId": "folder-002",
+        "catalogName": "金庸武侠",
+        "type": "folder",
+        "updatedAt": "2026-07-12T09:00:00.000+08:00"
+      }
+    ],
+    "pageInfo": {
+      "nextPageCursor": "cursor-page-1"
+    }
+  }
+}

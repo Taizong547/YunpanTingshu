@@ -1,0 +1,86 @@
+[
+  {
+    "host": "https://example.com/orchestration",
+    "endpoint": "/file/list",
+    "primary": "https://example.com/orchestration/file/list",
+    "candidates": [
+      "https://example.com/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://example.com",
+    "endpoint": "/file/list",
+    "primary": "https://example.com/orchestration/file/list",
+    "candidates": [
+      "https://example.com/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://ose.caiyun.feixin.10086.cn/orchestration",
+    "endpoint": "/file/list",
+    "primary": "https://ose.caiyun.feixin.10086.cn/orchestration/file/list",
+    "candidates": [
+      "https://ose.caiyun.feixin.10086.cn/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://personal-kd-njs.yun.139.com/hcy",
+    "endpoint": "/file/list",
+    "primary": "https://personal-kd-njs.yun.139.com/hcy/file/list",
+    "candidates": [
+      "https://personal-kd-njs.yun.139.com/hcy/file/list",
+      "https://personal-kd-njs.yun.139.com/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://personal-kd-njs.yun.139.com/hcy/orchestration",
+    "endpoint": "/file/list",
+    "primary": "https://personal-kd-njs.yun.139.com/hcy/orchestration/file/list",
+    "candidates": [
+      "https://personal-kd-njs.yun.139.com/hcy/orchestration/file/list",
+      "https://personal-kd-njs.yun.139.com/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://example.com/",
+    "endpoint": "/file/list",
+    "primary": "https://example.com/orchestration/file/list",
+    "candidates": [
+      "https://example.com/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://example.com/orchestration/v1",
+    "endpoint": "/file/list",
+    "primary": "https://example.com/orchestration/v1/file/list",
+    "candidates": [
+      "https://example.com/orchestration/v1/file/list"
+    ]
+  },
+  {
+    "host": "https://example.com",
+    "endpoint": "/orchestration/personalCloud/catalog/v1.0/getDisk",
+    "primary": "https://example.com/orchestration/personalCloud/catalog/v1.0/getDisk",
+    "candidates": [
+      "https://example.com/orchestration/personalCloud/catalog/v1.0/getDisk"
+    ]
+  },
+  {
+    "host": "https://personal-kd-njs.yun.139.com/hcy/",
+    "endpoint": "/file/list",
+    "primary": "https://personal-kd-njs.yun.139.com/hcy/file/list",
+    "candidates": [
+      "https://personal-kd-njs.yun.139.com/hcy/file/list",
+      "https://personal-kd-njs.yun.139.com/orchestration/file/list"
+    ]
+  },
+  {
+    "host": "https://personal-kd-njs.yun.139.com/hcy/orchestration/",
+    "endpoint": "/file/list",
+    "primary": "https://personal-kd-njs.yun.139.com/hcy/orchestration/file/list",
+    "candidates": [
+      "https://personal-kd-njs.yun.139.com/hcy/orchestration/file/list",
+      "https://personal-kd-njs.yun.139.com/orchestration/file/list"
+    ]
+  }
+]

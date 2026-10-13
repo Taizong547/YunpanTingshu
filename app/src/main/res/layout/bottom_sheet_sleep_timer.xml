@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 睡眠定时 BottomSheet：分钟档 + 本集结束 + 再播完 N 集（快捷+自定义） -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface"
+    android:padding="24dp"
+    android:paddingBottom="28dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer_minutes_title"
+            android:textColor="@color/onSurface"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 分钟档 15/30/45/60/90 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="5">
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/min15" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="15" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/min30" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="30" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/min45" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="45" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/min60" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="60" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/min90" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="90" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEndEpisode"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/timer_end_episode"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer_episodes_title"
+            android:textColor="@color/onSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- 集数快捷 1/2/3/5/10 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="5">
+
+            <com.google.android.material.button.MaterialButton android:id="@+id/ep1" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="1" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/ep2" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="2" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/ep3" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="3" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/ep5" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="5" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/ep10" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginHorizontal="2dp" android:text="10" android:textSize="12sp" android:minWidth="0dp" android:padding="0dp" />
+        </LinearLayout>
+
+        <!-- 自定义集数 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/timer_episodes_custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/epCustomInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEpCustom"
+                style="@style/Widget.Yunpan.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="确定"
+                app:backgroundTint="@color/primary"
+                android:textColor="@color/onPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

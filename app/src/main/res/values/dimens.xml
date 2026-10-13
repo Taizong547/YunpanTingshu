@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆角规格 -->
+    <dimen name="corner_card">16dp</dimen>
+    <dimen name="corner_mini_player_bar">20dp</dimen>
+    <dimen name="corner_button">12dp</dimen>
+    <dimen name="corner_bottom_sheet">28dp</dimen>
+    <dimen name="corner_list_cover">12dp</dimen>
+    <dimen name="corner_cover">24dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="cover_size_large">240dp</dimen>
+    <dimen name="vinyl_size">300dp</dimen>
+    <dimen name="mini_cover_size">46dp</dimen>
+    <dimen name="mini_player_height">60dp</dimen>
+
+    <!-- 播放器控制按钮 -->
+    <dimen name="play_pause_size">76dp</dimen>
+    <dimen name="side_control_size">56dp</dimen>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 队列面板条目：左竖条(当前) + 序号 + 文件名 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/queueItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:paddingHorizontal="16dp">
+
+    <View
+        android:id="@+id/queueIndicator"
+        android:layout_width="3dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/primary"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvQueueIndex"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/onSurfaceVariant"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/tvQueueName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:text=""
+        android:textColor="@color/onSurface"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:ellipsize="end" />
+</LinearLayout>

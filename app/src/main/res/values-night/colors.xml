@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 深色色板（night）：近黑炭底 + 暖橙点缀，听书夜间质感 -->
+<resources>
+    <color name="primary">#FF7A3D</color>
+    <color name="onPrimary">#2A1408</color>
+    <color name="primaryContainer">#4A2410</color>
+    <color name="onPrimaryContainer">#FFDCC8</color>
+    <color name="secondary">#B4BAC4</color>
+    <color name="onSecondary">#1A1C20</color>
+    <color name="secondaryContainer">#2C2E34</color>
+    <color name="onSecondaryContainer">#D6DAE2</color>
+    <color name="surface">#17181C</color>
+    <color name="onSurface">#F2F3F6</color>
+    <color name="surfaceVariant">#26272D</color>
+    <color name="onSurfaceVariant">#9BA0AA</color>
+    <color name="background">#0E0F12</color>
+    <color name="onBackground">#F2F3F6</color>
+    <color name="outline">#3A3C44</color>
+    <color name="outlineVariant">#26272D</color>
+    <color name="error">#FFB4AB</color>
+    <color name="onError">#690005</color>
+
+    <!-- 播放器（始终深色） -->
+    <color name="playerBackgroundTop">#22232A</color>
+    <color name="playerBackgroundBottom">#101114</color>
+    <color name="playerTextPrimary">#F5F6F8</color>
+    <color name="playerTextSecondary">#9BA0AA</color>
+    <color name="playerAccent">#FF7A3D</color>
+    <color name="playerControlNormal">#E8EAEE</color>
+    <color name="coverGradientStart">#3A3D46</color>
+    <color name="coverGradientEnd">#23252C</color>
+
+    <!-- 迷你播放条（深色悬浮） -->
+    <color name="miniPlayerBar">#1D1E23</color>
+    <color name="chipTimer">#3A2A20</color>
+</resources>

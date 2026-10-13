@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 迷你播放条背景：圆角悬浮卡片 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/miniPlayerBar" />
+    <corners
+        android:topLeftRadius="@dimen/corner_mini_player_bar"
+        android:topRightRadius="@dimen/corner_mini_player_bar" />
+</shape>

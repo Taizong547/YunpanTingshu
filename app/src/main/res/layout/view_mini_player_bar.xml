@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部常驻迷你播放条：圆角悬浮卡片，小封面 + 标题/专辑 + 播放/下一首 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/miniPlayerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mini_player_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_mini_player_bar"
+    android:paddingHorizontal="10dp"
+    android:elevation="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <FrameLayout
+        android:id="@+id/miniCoverBox"
+        android:layout_width="@dimen/mini_cover_size"
+        android:layout_height="@dimen/mini_cover_size"
+        android:background="@drawable/bg_cover_gradient">
+
+        <ImageView
+            android:id="@+id/miniCoverIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_headphones"
+            app:tint="@color/onSurfaceVariant"
+            android:contentDescription="@string/mini_now_playing" />
+
+        <ImageView
+            android:id="@+id/miniCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="封面" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/miniTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mini_now_playing"
+            android:textColor="@color/onSurface"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/miniAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/onSurfaceVariant"
+            android:textSize="11sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/miniTimer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_timer"
+        app:tint="@color/primary"
+        android:contentDescription="@string/player_timer"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/miniPlayPause"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_play"
+        app:tint="@color/onSurface"
+        android:contentDescription="@string/player_play" />
+
+    <ImageButton
+        android:id="@+id/miniNext"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_next"
+        app:tint="@color/onSurface"
+        android:contentDescription="@string/player_next" />
+
+</LinearLayout>

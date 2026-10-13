@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      { "fileId": "ext-mp3",  "name": "音频A.mp3",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-m4a",  "name": "音频B.m4a",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-m4b",  "name": "音频C.m4b",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-aac",  "name": "音频D.aac",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-flac", "name": "音频E.flac", "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-ogg",  "name": "音频F.ogg",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-opus", "name": "音频G.opus", "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-wav",  "name": "音频H.wav",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-wma",  "name": "音频I.wma",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-amr",  "name": "音频J.amr",  "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-txt",  "name": "说明.txt",   "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" },
+      { "fileId": "ext-jpg",  "name": "封面.jpg",   "size": 100, "updatedAt": "2026-07-13T10:00:00.000+08:00" }
+    ]
+  }
+}

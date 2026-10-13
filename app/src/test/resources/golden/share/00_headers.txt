@@ -1,0 +1,34 @@
+# 139 shareweb 出向请求必带头（录制自浏览器真实 XHR，2026-10-04）
+# 说明：
+#  - URL 基础: https://share-kd-njs.yun.139.com/yun-share
+#  - HTTP body 不是明文 JSON，而是 AES-128-CBC( key=PVGDwmcvfs1uV3d1, 随机16B IV前置 ) 后的 Base64 字符串
+#  - mcloud-sign 由请求明文 JSON（加密前）+ timeStr + random16 计算，见 crypto/sign.js
+#
+Content-Type: application/json;charset=UTF-8
+Accept: application/json, text/plain, */*
+Origin: https://yun.139.com
+Referer: https://yun.139.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36
+X-Deviceinfo: ||9|12.27.0|chrome|146.0.0.0|01c8e9ddaf469105d11f67966323ef48||linux unknow|1920X993|zh-CN|||
+hcy-cool-flag: 1
+CMS-DEVICE: default
+x-yun-channel-source: 10213406
+x-huawei-channelSrc: 10213406
+x-SvcType: 1
+x-yun-svc-type: 1
+x-m4c-caller: PC
+x-m4c-src: 10002
+x-inner-ntwk: 2
+mcloud-route: 001
+mcloud-version: 7.13.3
+mcloud-channel: 1000101
+mcloud-client: 10702
+mcloud-sign: <timeStr>,<random16>,<sign>      # 例: 2026-10-04 09:36:18,f6g55F4jF5nYcX4L,3DB1D45BEF4FA8703161384B81B4D691
+mcloud-skey:                                    # 匿名分享为空字符串
+INNER-HCY-ROUTER-HTTPS: 1
+x-yun-module-type: 100
+x-yun-app-channel: 10213406
+x-yun-api-version: v1
+
+# 注意：未发现必须的 Cookie（匿名分享请求不带登录 cookie 即可成功，已用裸 curl 验证）。
+# 直链播放（presentURL / m3u8 / .ts）无需任何上述头，裸 GET 即可，仅 URL 签名时效约 8 小时。

@@ -1,0 +1,97 @@
+[
+  {
+    "input": "WDoxMzgwMDEzODAwMDphfGJ8Y3wxODk5OTk5OTk5OTk5fHRhaWw=",
+    "account": "13800138000",
+    "tokenInfo": "a|b|c|1899999999999|tail",
+    "expireTime": 1899999999999,
+    "expectError": false
+  },
+  {
+    "input": "Basic WDoxMzgwMDEzODAwMDphfGJ8Y3wxODk5OTk5OTk5OTk5fHRhaWw=",
+    "account": "13800138000",
+    "tokenInfo": "a|b|c|1899999999999|tail",
+    "expireTime": 1899999999999,
+    "expectError": false
+  },
+  {
+    "input": "basic  WDoxMzgwMDEzODAwMDphfGJ8Y3wxODk5OTk5OTk5OTk5fHRhaWw= \n ",
+    "account": "13800138000",
+    "tokenInfo": "a|b|c|1899999999999|tail",
+    "expireTime": 1899999999999,
+    "expectError": false
+  },
+  {
+    "input": "WDoxMzkwMDEzOTAwMDp0b2t8ZW58aW5mbw==",
+    "account": "13900139000",
+    "tokenInfo": "tok|en|info",
+    "expireTime": 0,
+    "expectError": false
+  },
+  {
+    "input": "5YmN57yA5Lit5paHOjEzNzAwMTM3MDAwOmF8YnxjfDE4OTk5OTk5OTk5OTh85bC+6YOo5Lit5paH",
+    "account": "13700137000",
+    "tokenInfo": "a|b|c|1899999999998|尾部中文",
+    "expireTime": 1899999999998,
+    "expectError": false
+  },
+  {
+    "input": "WDoxMzYwMDEzNjAwMDpwYXJ0MXxwYXJ0Mnx3aXRoOmNvbG9uOmluc2lkZXwxODk5OTk5OTk5OTk3fHRhaWw=",
+    "account": "13600136000",
+    "tokenInfo": "part1|part2|with:colon:inside|1899999999997|tail",
+    "expireTime": 1899999999997,
+    "expectError": false
+  },
+  {
+    "input": "b25seXR3bzpwYXJ0cw==",
+    "account": null,
+    "tokenInfo": null,
+    "expireTime": null,
+    "expectError": true,
+    "error": "Authorization 令牌格式不完整"
+  },
+  {
+    "input": "c2luZ2xlc3RyaW5n",
+    "account": null,
+    "tokenInfo": null,
+    "expireTime": null,
+    "expectError": true,
+    "error": "Authorization 令牌格式不完整"
+  },
+  {
+    "input": "Basic WToxMzUxMjM0NTY3ODp6fHp8enwxNzYwMDAwMDAwMDAw",
+    "account": "13512345678",
+    "tokenInfo": "z|z|z|1760000000000",
+    "expireTime": 1760000000000,
+    "expectError": false
+  },
+  {
+    "input": "Basic WDoxMzQ1NTU1NjY2NjprMXxrMnxhOmI6aW5zaWRlfDE4OTk5OTk5OTk5OTZ8ZW5k\t",
+    "account": "13455556666",
+    "tokenInfo": "k1|k2|a:b:inside|1899999999996|end",
+    "expireTime": 1899999999996,
+    "expectError": false
+  },
+  {
+    "input": "  Basic WDoxMzQ1NTU1NjY2NjprMXxrMnxhOmI6aW5zaWRlfDE4OTk5OTk5OTk5OTZ8ZW5k",
+    "account": null,
+    "tokenInfo": null,
+    "expireTime": null,
+    "expectError": true,
+    "error": "The string to be decoded is not correctly encoded."
+  },
+  {
+    "input": "WDoxMzMxMTExMjIyMjpwfHF8cnwxOTAwMDAwMDAwMDAw",
+    "account": "13311112222",
+    "tokenInfo": "p|q|r|1900000000000",
+    "expireTime": 1900000000000,
+    "expectError": false
+  },
+  {
+    "input": "",
+    "account": null,
+    "tokenInfo": null,
+    "expireTime": null,
+    "expectError": true,
+    "error": "Authorization 令牌格式不完整"
+  }
+]

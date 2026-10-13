@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        统一 TypeScale：全部 sans-serif（清除任何衬线/楷体感）。
+        页面标题20 medium / 列表主16 medium / 副13 / 辅助12。
+        应用主题在 themes.xml 里已设 android:fontFamily=sans-serif 兜底。
+    -->
+
+    <!-- 页面大标题（历史/云盘/我的顶栏） -->
+    <style name="TextAppearance.Yunpan.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- 列表项主文字（文件名/账号名） -->
+    <style name="TextAppearance.Yunpan.ListTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 列表项副文字（专辑/时间/路径） -->
+    <style name="TextAppearance.Yunpan.ListSub" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 辅助/时间戳文字 -->
+    <style name="TextAppearance.Yunpan.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- 正文/设置项 -->
+    <style name="TextAppearance.Yunpan.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+</resources>

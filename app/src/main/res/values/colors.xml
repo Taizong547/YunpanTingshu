@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 浅色板（day）：现代中性 + 暖橙点缀（喜马拉雅质感） -->
+<resources>
+    <color name="primary">#6C7BD9</color>          <!-- 低饱和蓝紫主色（Apple Music 深色质感） -->
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#E4E7FB</color>
+    <color name="onPrimaryContainer">#1B2150</color>
+    <color name="secondary">#5B5F66</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#E4E5E9</color>
+    <color name="onSecondaryContainer">#1A1C20</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#16171A</color>
+    <color name="surfaceVariant">#F0F1F4</color>
+    <color name="onSurfaceVariant">#6B7078</color>
+    <color name="background">#F6F7F9</color>
+    <color name="onBackground">#16171A</color>
+    <color name="outline">#C9CCD2</color>
+    <color name="outlineVariant">#E2E4E8</color>
+    <color name="error">#BA1A1A</color>
+    <color name="onError">#FFFFFF</color>
+
+    <!-- 播放器（始终深色，不随夜间模式变化） -->
+    <color name="playerBackgroundTop">#2A2A3A</color>
+    <color name="playerBackgroundBottom">#1E1E2E</color>
+    <color name="playerTextPrimary">#F5F6F8</color>
+    <color name="playerTextSecondary">#9BA0AA</color>
+    <color name="playerAccent">#6C7BD9</color>
+    <color name="playerControlNormal">#E8EAEE</color>
+    <color name="coverGradientStart">#3A3D46</color>
+    <color name="coverGradientEnd">#23252C</color>
+
+    <!-- 封面占位渐变 -->
+    <color name="coverGradientStartLight">#3A3D46</color>
+    <color name="coverGradientEndLight">#23252C</color>
+
+    <!-- 迷你播放条 -->
+    <color name="miniPlayerBar">#FFFFFF</color>
+    <color name="chipTimer">#E4E7FB</color>
+</resources>

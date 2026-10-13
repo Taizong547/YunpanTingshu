@@ -1,0 +1,52 @@
+{
+  "resultCode": "0",
+  "desc": "",
+  "data": {
+    "nodNum": 1,
+    "caLst": [
+      {
+        "caID": "FiJFJg_ErEfLwzMXkb_ZIRJNKGKjzqzdy",
+        "caName": "2026老梁精选",
+        "ctTime": "20260920154707",
+        "udTime": "20260920192048",
+        "dlTimes": null,
+        "path": "Fm48D-UmB_2QeJ279fcdFOYBUUtJLAdnk/FiJFJg_ErEfLwzMXkb_ZIRJNKGKjzqzdy",
+        "illegalType": 1,
+        "illegalResult": 1,
+        "updateStatus": null
+      }
+    ],
+    "coLst": null,
+    "tagName": null,
+    "tagID": null,
+    "tagType": null,
+    "isCreator": "0",
+    "lkName": "2026老梁精选",
+    "ctTime": "20261004092051",
+    "dlTimes": 0,
+    "desc": null,
+    "creator": "13618196780",
+    "owner": "13618196780",
+    "brwTimes": 3,
+    "svTimes": 0,
+    "homeURL": null,
+    "openCount": "0",
+    "subLinkType": 0,
+    "expireTime": "",
+    "isUnlimitedTimes": 1,
+    "nickName": "136****6780",
+    "password": "ghh8",
+    "subStatus": 0,
+    "subTimes": 0,
+    "updateStatus": 0,
+    "recentUpdateCount": 0,
+    "caLength": "1",
+    "coLength": "0",
+    "nextPageCursor": null,
+    "belongsPlatform": 2,
+    "resultExplain": "2",
+    "pcaID": "root"
+  },
+  "success": true,
+  "code": "0"
+}
